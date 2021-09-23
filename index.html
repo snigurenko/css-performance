@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Animation Optimization & Performance</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Css Animation Optimization & Performance</h1>
+  <header>
+    <button>Make it Smooth</button>
+    <a href="https://csstriggers.com" target="_blank" rel="noopener noreferrer">https://csstriggers.com</a>
+  </header>
+  <div class="container">
+    <section>
+      <div class="card">
+        <h1>box1</h1>
+      </div>
+      <div class="card">
+        <h1>box2</h1>
+      </div>
+      <div class="card">
+        <h1>box3</h1>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    button = document.querySelector('button')
+
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.card').forEach((card) => {
+        card.classList.add('newAnim')
+      })
+    })
+  </script>
+
+</body>
+</html>
